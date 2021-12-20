@@ -1,0 +1,9 @@
+## Bên server dùng graphql phải cài: 
+- apollo-server-express: cái này chỉ là cái server để chạy được cái graphql 
+- graphql: viết ngôn ngữ graphql thì phải cài graphql
+## schema: Nói chung, một schema chỉ đơn giản là một tập hợp các types của GraphQL. Tuy nhiên, khi viết schema cho 
+một API, có một số loại gốc đặc biệt:
+- type Query { ... }
+- type Mutation { ... }
+- type Subscription { ... }
+=> Các loại Query, Mutation và Subscription là các entry points cho các request được gửi bởi client.

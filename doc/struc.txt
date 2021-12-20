@@ -1,0 +1,13 @@
+## Xem ảnh để hiểu được cấu trúc kết nối giữa front-end và back-end 
+- Cái vạch vàng sẽ là chia giữa back-end và front-end  
++ Phần trên vạch vàng sẽ là front-end ở đây chúng ta sẽ dùng reactjs 
+    ! Nằm ở trên cái reactjs này chúng ta sẽ có một cái gọi là Apollo clinet, và ông này được coi là cái người đứng ở 
+    phía react và nói chuyện với thằng server - thay mặt cho ông react để nói chuyện với server
++ Phần dưới vạch vàng sẽ là back-end ở đây chúng ta sẽ chạy server express  
+    ! Đương nhiên bên phía server cũng có đại diện gọi là Apollo Graphql Server, cùng được tạo bởi ông Apollo nhưng mà 
+    ông này đứng bên phía server và nói chuyện với front-end 
+    ! Có rất nhiều các loại cơ sở dữ liệu để chúng ta sử dụng và ở đây chúng ta sẽ dùng mongoDb và khi mà chúng ta lấy được 
+    dữ liệu từ trong mongoDb rồi thì chúng ta sẽ format cái dữ liệu đó để chúng ta chuyển tới thằng Apollo Graphql Server 
+    để có có thể đưa dữ liệu lên Apollo clinet và bên phía front-end Apollo clinet sẽ trả lại cho react và react tạo giao diện
+    người dùng
+=> Apollo(thư viện) có chức năng đứng ở phía chung gian để nói chuyện qua lại với nhau giữa back-end và front-end

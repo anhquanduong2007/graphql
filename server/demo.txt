@@ -1,0 +1,45 @@
+## Graphql nó là một ngôn ngữ mới hiện nay mà được sử dụng rất là nhiều để nói truyện với api server
+## Điểm mạnh của graphql và cũng là điểm hấp dẫn của nó là từ phía front-end chúng ta có thể hỏi, thông qua 
+việc sử dụng ngôn ngữ này chúng ta có thể hỏi bất kì 1 dữ liệu nào của api server rất là nhanh, chính xác, đầy đủ mà
+không cần phải tốn quá nhiều công setup những api enpoint - những điểm đến api cho server của chúng ta 
+
+GET 
+api/books 
+
+GET 
+api/authors 
+
+GET 
+api/books/:id (id = 5)
+{
+    id: 5
+    title: "Game of Thrones"
+    genre: "fantasy"
+    authorId: 4
+}
+
+GET 
+api/authors/:id (id = 4)
+{
+    id: 4 
+    name: "George R. R. Martin"
+    age: 50 
+    bookIds: [6,7,8]
+}
+
+============================= 
+
+{
+    book (id: 5){
+        title 
+        genre
+        author {
+            name 
+            age 
+            books {
+                title 
+                genre
+            }
+        }
+    }
+}
